@@ -1,0 +1,10 @@
+services:
+  backend:
+    build: ./
+    restart: always
+    environment:
+      SUPABASE_URL: https://myapp.supabase.co
+      SUPABASE_ANON_KEY: key123
+    ports:
+      - '6969:6969'
+
